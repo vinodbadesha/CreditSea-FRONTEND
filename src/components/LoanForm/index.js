@@ -52,11 +52,20 @@ class LoanForm extends Component{
             },
             body: JSON.stringify(loanData)
         }
-
-        const response = await fetch(url, options)
         
-        if (response.ok){
-            alert("Form Submitted Successfully")
+        try {
+            const response = await fetch(url, options);
+            
+            if (response.ok) {
+                this.props.refreshData();
+                alert("Form Submitted Successfully");
+            } else {
+                const errorMessage = await response.text();
+                alert("Submission Failed: " + errorMessage);
+                console.error("Error:", errorMessage);
+            }
+        } catch (error) {
+            console.error("Error during submission:", error);
         }
     }
 

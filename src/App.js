@@ -48,7 +48,7 @@ getLoansData = async () => {
           <Header />
             <Switch>
               <Route exact component={HomePage} path="/" />
-              <Route exact render={(props) => <User {...props} data={loansData} />} path="/user" />
+              <Route exact render={(props) => <User {...props} data={loansData} refreshData={this.getLoansData} />} path="/user" />
               <Route exact render={(props) => <Verifier {...props} loansData={loansData} />} path="/verifier" />
               <Route exact render={(props) => <Admin {...props} loansData={loansData} />} path="/admin" />
             </Switch>
