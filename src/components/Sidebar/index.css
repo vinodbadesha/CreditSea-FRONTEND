@@ -1,0 +1,47 @@
+.sidebar{
+    height: 100vh;
+    width: 30vw;
+    background: #132E1A;
+}
+.profile-box{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+.profile-box img{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.profile-box p{
+    color: #ADCF1A;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 15px;
+    font-weight: 600;
+}
+.sidebar-list{
+    list-style-type: none;
+    padding-left: 0;
+}
+.each-sidebar-item{
+    background: #0A512F;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+.each-sidebar-item img {
+    height: 20px;
+    width: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.each-sidebar-item p{
+    color: white;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}

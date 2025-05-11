@@ -1,0 +1,36 @@
+.admin-dashboard{
+    color: #0A512F;
+    font-size: 23px;
+    font-weight: 700;
+}
+.admin-each-stat-container{
+    height: 100px;
+    width: 250px;
+    display: flex;
+    margin-right: 2%;
+    margin-bottom: 20px;
+}
+.admin-stat-img-container{
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0A512F;
+}
+.admin-stat-info-container{
+    background: white;
+    width: 140px;
+    padding-left: 20px;
+}
+.admin-stat-info-container p{
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 700;
+}
+.admin-applied-loans-container{
+    background-color: white;
+    margin-right: 7%;
+    padding-top: 30px;
+}
